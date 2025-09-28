@@ -1,0 +1,30 @@
+.background {
+    background-image: url('home.jpg');
+    border: none;
+    outline: none;
+    padding: 250px;
+    box-shadow: 0 30px 30px #646161ee;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    font-weight: 500;
+    color: #111111;
+    text-transform: capitalize;
+    text-align: left;
+    letter-spacing: 1px;
+    position: absolute;
+}
+
+@media(max-width: 400px) {
+    h2 {
+        font-size: 23px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: green;
+    }
+}

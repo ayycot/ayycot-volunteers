@@ -1,0 +1,21 @@
+
+/* SECTIONS */
+section{padding:90px 20px;text-align:center;position:relative;opacity:0;transform:translateY(50px);transition:all 1s ease;overflow:hidden;}
+section.visible{opacity:1;transform:translateY(0);}
+section h2{font-size:2.5rem;margin-bottom:20px;background:linear-gradient(90deg,#2c7a7b,#38b2ac);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 2px 5px rgba(0,0,0,0.2);}
+section p{max-width:750px;margin:auto;font-size:1.1rem;line-height:1.8;}
+
+/* FOOTER */
+footer{background:linear-gradient(135deg,#2c7a7b,#234e52);color:white;padding:70px 20px;text-align:center;}
+.creators{display:flex;justify-content:center;gap:50px;flex-wrap:wrap;margin:35px 0;}
+.creator{background:rgba(255,255,255,0.1);padding:30px;border-radius:20px;width:230px;transition:all 0.4s;}
+.creator:hover{transform:translateY(-10px) scale(1.03);background:rgba(255,255,255,0.2);}
+.creator img{width:130px;height:130px;border-radius:50%;border:3px solid #f6ad55;box-shadow:0 8px 25px rgba(0,0,0,0.3);margin-bottom:15px;transition:transform 0.3s;}
+.creator img:hover{transform:scale(1.1) rotate(-3deg);}
+.creator h3{margin:5px 0;font-size:1.25rem;}
+.creator p{font-size:0.95rem;opacity:0.9;}
+.credit{margin-top:25px;font-size:0.95rem;opacity:0.85;}
+
+/* SVG DIVIDERS */
+.svg-divider{display:block;width:100%;margin-bottom:-7px;}
+.svg-divider svg{display:block;width:100%;height:70px;}

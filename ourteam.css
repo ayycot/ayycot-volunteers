@@ -1,0 +1,96 @@
+
+/* Leadership team card h3 styles */
+.boxx h3 {
+  text-align: center;
+  font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #e91e63, #0077b5, #38b2ac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;`
+  color: transparent;
+  margin: 12px 0 6px 0;
+  letter-spacing: 1px;
+  transition: background 0.5s;
+}
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    font-family: Georgia;
+    font-weight: 500;
+    text-transform: capitalize;
+    opacity: 3;
+}
+
+.box-containerr {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.box-containerr .boxx {
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+  height: 420px;
+  min-height: 420px;
+  max-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.box-containerr .boxx img { 
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 40%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.box-containerr .boxx img:hover {
+    border: 5px solid rgb(78, 230, 8);
+    transition: 0.35s ease-in;
+}
+
+}
+
+
+
+/*media query for responsiveness*/
+@media (max-width: 700px) {
+  .box-containerr {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .box-containerr {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .box-containerr .boxx {
+    flex: 1 1 300px;
+    max-width: 45%;
+  }
+}
+
+

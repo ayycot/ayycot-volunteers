@@ -1,0 +1,360 @@
+/*Importing Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@100;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /*root colors*/
+    --white-color: #fff;
+    --dark-clor: #252525;
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --light-pink-color: #faf4f5;
+    --medium-gray-color: #ccc;
+    --more-color: #615b5b;
+
+    /*font size*/
+    --font-size-s: 0.9rem;
+    --font-size-m: 1.2rem;
+    --font-size-n: 1rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /*font weight*/
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /*border radius*/
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /*site max width*/
+    --site-max-width: 1300px;
+}
+
+/*styling for all site*/
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+.Logo {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--border-radius-circle);
+    cursor: pointer;
+ 
+
+}
+
+/*Navbar Styling*/
+header {
+    padding: 6px;
+    background: linear-gradient(-45deg, #ff3c3c, #ff9a00, #00e0ff, #8e2de2);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes gradientShift {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ayy {
+font-family: sans-serif; /* A bold, strong font */
+font-size: 26px;
+color: #004d99; /* A professional school blue */
+text-shadow: 7px 7px 13px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+letter-spacing: 0.5px;/* Add some space between letters */ 
+background: linear-gradient(to right, #e6f7ff, #ffffff); /* Optional: subtle gradient background */
+border-bottom: 2px solid #b3d9ff; /* Optional: light border */
+background-image: linear-gradient(90deg, #007bff, #6610f2, #e83e8c, #ffc107, #28a745); /* Linear gradient colors */
+background-size: 500% auto; /* Make the gradient larger than the element */
+-webkit-background-clip: text; /* Clip the background to the text */
+background-clip: text;
+-webkit-text-fill-color: transparent; /* Make the text transparent to show the background */
+animation: gradientAnimation 10s linear infinite; /* Apply animation */
+text-transform: capitalize;
+}
+
+@keyframes gradientAnimation {
+0% {
+background-position: 0% 50%;
+}
+100% {
+background-position: 500% 50%;
+}
+}
+
+
+.nav .nav-logo {
+    color: var(--white-color);
+}
+
+.navbar,.nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+
+.nav-menu li a {
+    margin-right: 17px;
+    color: hsl(0, 50%, 98%);
+    font-family: Georgia;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: var(--border-radius-s);
+    font-size: 23px;
+    text-transform: capitalize;
+    font-weight: var(--font-weight-normal);
+}
+
+
+
+.nav-menu li a:hover {
+    color: red;
+    text-decoration: underline;
+    font-size: var(--font-size-l);
+}
+
+
+
+
+
+.navbar a:hover {color: gold;}
+    .menu-toggle {display: none; font-size: 1.5rem; cursor: pointer;}
+    .side-menu {position: fixed; top: 0; right: -250px; width: 250px; height: 100%; background: #111; transition: right 0.3s ease; padding-top: 5rem;}
+    .side-menu ul {list-style: none; padding: 0;}
+    .side-menu li {margin: 1rem 0; text-align: center;}
+    .side-menu a {color: #fff; text-decoration: none; font-size: 1.2rem;}
+    .side-menu a:hover {color: gold;}
+
+
+
+.welcome_page {
+    height: 89vh;
+    background-color: #3b141c;
+}
+
+h2 {
+    color: var(--white-color);
+    margin: 0;
+}
+
+.simple_contact {
+    color: var(--white-color);
+    font-size: var(--font-size-s);
+    font-family: 'poppins' sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.left_contact {
+    margin-left: 4.5%;
+}
+
+.right_contact {
+    margin-right: 4.5%;
+}
+
+.underline {
+    border: none;
+    height: 1px;
+    background-color:  var(--medium-gray-color);
+    margin-top: 15px;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: green;
+    font-family: 'poppins' sans-serif;
+}
+
+.home_page {
+    background-color: silver;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.left-section {
+width: 49%; /* Adjust the width as needed */
+height: 40em;
+background-color: #f0f0f0;
+box-sizing: border-box; /* Include padding in width calculation */
+
+}
+
+.right-section {
+width: 70%; /* Adjust the width as needed */
+overflow: hidden; /* Hide overflowing images */
+position: relative; /* For absolute positioning of images */
+}
+
+.slideshow-container {
+width: 100%;
+height: 100%;
+position: relative;
+}
+
+.slide {
+position: absolute;
+width: 100%;
+height: 100%;
+display: none; /* Hide all slides by default */
+transition: opacity 1s ease; /* Add a smooth transition */
+}
+
+.slide img {
+width: 100%;
+height: 100%;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+
+
+;
+object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+.active {
+display: block; /* Show the active slide */
+opacity: 1;
+
+}
+
+.container {
+    display: flex;
+}
+.left_section{
+    background-color: #000;
+    width: 50%;
+    height: 40.5em;
+    position: relative;
+    width: 35em;
+    height: 40.5em;
+    text-align: center;
+}
+img {
+    width: 44.88em;
+    height: 40.5em;
+    position: relative;
+}
+.ppp {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 13.6em;
+}
+.welcome_to {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: cursive;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+.schools_name{
+    font-size: 46px;
+    color: red;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: capitalize;
+}
+.rest {
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    font-family: poppins;
+    font-weight: 300;
+    margin-left: 20px;
+}
+.academ {
+    padding: 11px;
+    font-size: 19px;
+    font-family: georgia;
+    font-weight: 300;
+    color: #000;
+    text-transform: capitalize;
+    background: linear-gradient(120deg, darkmagenta, crimson, orange);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+    border: none;
+    outline: 0;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background: transparent;
+}
+.academ:hover {
+    background-position: 0 0;
+}s
+
+.section {
+    display: flex;
+    background-color: #004d99;
+}
+
+.section img {
+    height: 250px;
+    width: 250px;
+}
+
+.section h1 {
+    color: greenyellow;
+}
+
+.section p {
+    color: #615b5b;
+    margin-right: 15px;
+}
+
+.side-menu.active.bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.active .bar:nth-child(1)
