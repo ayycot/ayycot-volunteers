@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color:  rgba(155,62,147,0.58);
     overflow: hidden;
     min-height: 400px; /* Ensures reasonable min height on mobile */
 }
