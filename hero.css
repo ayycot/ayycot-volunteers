@@ -54,7 +54,7 @@
 .bf-img {
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     object-fit: cover;
     object-position: center;
     background-position: center;
@@ -62,7 +62,7 @@
     over-flow: hidden;
     pointer-events: none;
     user-select: none;
-
+}
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
